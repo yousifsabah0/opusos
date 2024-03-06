@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SF Pro:size=14";
+static char *font = "SF Mono:size=14";
 static int borderpx = 30;
 
 /*
