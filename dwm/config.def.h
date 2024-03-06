@@ -17,7 +17,7 @@ static const unsigned int gappov    = 35;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
  
 
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "Osande:size=12" };
 
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
