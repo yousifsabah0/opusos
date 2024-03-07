@@ -1,4 +1,4 @@
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 35;       /* snap pixel */
 
 static const int showbar            = 1;        /* 0 means no bar */
