@@ -17,3 +17,21 @@ super + shift + b
 # Telegram Desktop
 super + shift + t
     telegram-desktop
+
+# volume control
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioMute
+    amixer set Master toggle
+
+# Increase Brightness
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+# Decrease Brightness
+XF86MonBrightnessDown
+    xbacklight -dec 10

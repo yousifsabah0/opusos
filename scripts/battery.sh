@@ -1,10 +1,10 @@
 #!/bin/bash
 
-capacity=$(cat /sys/class/power_supply/BAT0/capacity)
-status=$(cat /sys/class/power_supply/BAT0/status)
+capacity=$(cat /sys/class/power_supply/BAT1/capacity)
+status=$(cat /sys/class/power_supply/BAT1/status)
 
 if [ "$status" = "Charging" ]; then
-    echo "🔌 $capacity%"
+    echo "Charging $capacity%"
 else
-    echo "🔋 $capacity%"
+    echo "$capacity%"
 fi
