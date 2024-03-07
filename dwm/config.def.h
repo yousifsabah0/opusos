@@ -14,16 +14,31 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
  
 static const char *fonts[]          = { ".:size=12" };
 
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+// static const char col_gray1[]       = "#222222";
+// static const char col_gray2[]       = "#444444";
+// static const char col_gray3[]       = "#bbbbbb";
+// static const char col_gray4[]       = "#eeeeee";
+// static const char col_cyan[]        = "#005577";
+
+// static const char *colors[][3]      = {
+// 	/*               fg         bg         border   */
+// 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+// 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+// };
+
+static const char norm_fg[] = "#e5e8ec"; // Text
+static const char norm_bg[] = "#0c1012"; // Background
+static const char norm_border[] = "#a0a2a5"; // Border
+
+static const char sel_fg[] = "#e5e8ec"; // Text
+static const char sel_bg[] = "#99A0A8"; // Background
+static const char sel_border[] = "#e5e8ec"; // Border
+
 
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+    /*               fg           bg         border                         */
+    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
+    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
 };
 
 static const unsigned int baralpha = 0xd0;
